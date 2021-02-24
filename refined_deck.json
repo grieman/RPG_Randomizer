@@ -1,0 +1,154 @@
+{
+    "0" : {
+        "Name": "Ally",
+        "Description": "A nonplayer character of the DM's choice becomes enamored with you. The identity of the new friend isn't known until the NPC or someone else reveals it. The NPC will do everything in their power to aid you as though you were a life-long friend.",
+        "Image": "images/refined_deck/ally.jpeg"
+    },
+    "1" : {
+        "Name": "Arcane",
+        "Description": "You lose all forms of wealth, but you are compensated by the gods with a magical item that appears at your feet.",
+        "Image": "images/refined_deck/arcane.jpeg"
+    },
+    "2" : {
+        "Name": "Bull",
+        "Description": "You feel great strength coursing through you, but at the expense of your mind. Roll 1d4 and add that much to your strength score. Subtract the same amount from your Intelligence score.",
+        "Image": "images/refined_deck/bull.jpeg"
+    },
+    "3" : {
+        "Name": "Cat",
+        "Description": "You feel yourself growing nimbler and more agile, but at the cost of your wisdom. Roll 1d4 and add that much to your Dexterity score. Subtract the same amount from your Wisdom score.",
+        "Image": "images/refined_deck/cat.jpeg"
+    },
+    "4" : {
+        "Name": "Comet",
+        "Description": "If you single-handedly defeat the next hostile monster or group of monsters you encounter, you gain enough experience points to gain one level. Otherwise, this card has no effect.",
+        "Image": "images/refined_deck/comet.jpeg"
+    },
+    "5" : {
+        "Name": "Doppelganger",
+        "Description": "Somewhere in the world, an exact duplicate of you appears. It has the same appearance, equipment, and knowledge as you. The only difference is that its alignment is opposite yours. Lawful becomes chaotic, and good becomes evil, or vice-versa.",
+        "Image": "images/refined_deck/doppel.jpeg"
+    },
+    "6" : {
+        "Name": "Euryale",
+        "Description": "This card's medusa-like visage curses you. You take a -2 penalty on saving throws while cursed in this way. Only a god or the magic of the Fates card can end this curse.",
+        "Image": "images/refined_deck/euryale.jpeg"
+    },
+    "7" : {
+        "Name": "Fates",
+        "Description": "Reality's fabric unravels and spins anew, allowing you to avoid or erase one event as if it never happened. You can use the card's magic as soon as you draw the card or at any other time before you die.",
+        "Image": "images/refined_deck/fates.jpeg"
+    },
+    "8" : {
+        "Name": "Fool",
+        "Description": "Lose 10,000 XP, discard this card, and draw from the deck again, counting both draws as one of your declared draws. If losing that much XP would cause you to lose a level, you instead lose an smount that leaves you with just enough XP to keep your level.",
+        "Image": "images/refined_deck/fool.jpeg",
+        "Add_Draw": "1"
+    },
+    "9" : {
+        "Name": "Gambler",
+        "Description": "You add 2 to your number of declared draws. You must draw them as if they were in your initial number of declared draws.",
+        "Image": "images/refined_deck/gambler.jpeg",
+        "Add_Draw": "2"
+    },
+    "10" : {
+        "Name": "Jester",
+        "Description": "You are transported to a random plane of existence. Roll a d20: 1-5 = random location on the material plane; 6-7 = Feywild; 8-9 = Shadowfell; 10 = Air; 11 = Earth; 12 = Fire; 13 = Water; 14 = Mechanus; 15 = Elisium; 16 = Mount Celestia; 17 = Limbo; 18 = The Nine Hells; 19 = Arcadia, 20 = Sigil",
+        "Image": "images/refined_deck/jester.jpeg"
+    },
+    "11" : {
+        "Name": "Golem",
+        "Description": "You gain a tough exterior and more hardy body, but at the cost of your charisma. Roll 1d4 and add that much to your Constitution score. Subtract the same amount from your Charisma score.",
+        "Image": "images/refined_deck/golem.jpeg"
+    },
+    "12" : {
+        "Name": "Guillotine",
+        "Description": "This card signals peril. You magically lose one limb or appendage, the wound healing instantly except for the limb. Roll 1d10: 10 = One Ear; 9 = One Finger; 8-7 = Left Foot; 6-5 = Right Foot; 4-3 = Off Hand; 2 = Main Hand; 1 = Head (Death)",
+        "Image": "images/refined_deck/guillotine.jpeg"
+    },
+    "13" : {
+        "Name": "Gem",
+        "Description": "Twenty-five pieces of jewelry worth 2,000 gp each or fifty gems worth 1,000 gp each appear at your feet.",
+        "Image": "images/refined_deck/gem.jpeg"
+    },
+    "14" : {
+        "Name": "Key",
+        "Description": "A rare or rarer magic weapon with which you are proficient appears in your hands. The DM chooses the weapon.",
+        "Image": "images/refined_deck/key.jpeg"
+    },
+    "15" : {
+        "Name": "Lightfoot",
+        "Description": "You feel your steps become lighter, making moving easier. You permanently gain 10 movement speed.",
+        "Image": "images/refined_deck/lightfoot.jpeg"
+    },
+    "16" : {
+        "Name": "Mire",
+        "Description": "You feel your mind slow as your draw his card. You cannot keep your defences up as efficiently in combat, permanently suffering a -2 penalty to AC. Only a god or the Fates card and end this curse.",
+        "Image": "images/refined_deck/mire.jpeg"
+    },
+    "17" : {
+        "Name": "Riches",
+        "Description": " All magic items in your possession instantly disintegrate or disappear as per the Talons card, however you are compensated by the gods with 5,000 platinum pieces (worth 10g each)which appear at your feet.",
+        "Image": "images/refined_deck/riches.jpeg"
+    },
+    "18" : {
+        "Name": "Rogue",
+        "Description": "A nonplayer character of the DM's choice becomes hostile toward you. The identity of your new enemy isn't known until the NPC or someone else reveals it. Nothing less than a wish spell or Divine Intervention can end the NPC's hostility toward you.",
+        "Image": "images/refined_deck/rogue.jpeg"
+    },
+    "19" : {
+        "Name": "Ruin",
+        "Description": "All forms of wealth that you carry or own, other than Magic Items, are lost to you. Portable property vanishes. Businesses, buildings, and land you own are lost in a way that alters reality the least. Any documentation that proves you should own something lost to this card also disappears.",
+        "Image": "images/refined_deck/ruin.jpeg"
+    },
+    "20" : {
+        "Name": "Sage",
+        "Description": "You feel a transformation in your mind, bringing with it the wisdom of an old wise one. However, you also feel ourself becoming less agile with your newfound wisdom. Roll 1d4. Add the number to your Wisdom score, and subtract the same amount from your Dexterity score.",
+        "Image": "images/refined_deck/sage.jpeg"
+    },
+    "21" : {
+        "Name": "Scale",
+        "Description": "You instantly age by 2d10 years, taking the same amount as phychic damage. You then have advantage on all skill checks that you and proficient in, and disadvantage in all others. A god, a wish spell or the Fates card can reverse this effect.",
+        "Image": "images/refined_deck/scales.jpeg"
+    },
+    "22" : {
+        "Name": "Scholar",
+        "Description": "Your mind undergoes spontaneous growth, and you feel yourself becoming more intelligent, but at the cost of your physical strength. Roll 1d4. Add the number to your Intelligence score, and subtract te same amount from your Strength score.",
+        "Image": "images/refined_deck/scholar.jpeg"
+    },
+    "23" : {
+        "Name": "Skull",
+        "Description": "You summon an avatar of death-a ghostly humanoid Skeleton clad in a tattered black robe and carrying a spectral scythe. It appears in a space of the DM's choice within 10 feet of you and attacks you, warning all others that you must win the battle alone. The avatar fights until you die or it drops to 0 hit points, whereupon it disappears. If anyone tries to help you, the helper summons its own avatar of death. A creature slain by an avatar of death can't be restored to life.",
+        "Image": "images/refined_deck/skull.jpeg"
+    },
+    "24" : {
+        "Name": "Star",
+        "Description": "Increase one of your Ability Scores by 2. The score can exceed 20 but can't exceed 24.",
+        "Image": "images/refined_deck/star.jpeg"
+    },
+    "25" : {
+        "Name": "Talons",
+        "Description": "Every magic item you wear or carry disintegrates. Artifacts in your possession aren't destroyed but do Vanish.",
+        "Image": "images/refined_deck/talons.jpeg"
+    },
+    "26" : {
+        "Name": "Throne",
+        "Description": "You gain proficiency in the Persuasion skill, and you double your proficiency bonus on checks made with that skill. In addition, you gain rightful ownership of a small keep somewhere in the world. However, the keep is currently in the hands of monsters, which you must clear out before you can claim the keep as yours.",
+        "Image": "images/refined_deck/throne.jpeg"
+    },
+    "27" : {
+        "Name": "Tongue",
+        "Description": "You feel a change in your mind, feeling yourself able to speak and act more persuasively. However, this comes at the expense of your physical endurance. Roll 1d4. Add the number to your Charisma score, and subtract the same amount from your Constitution score.",
+        "Image": "images/refined_deck/tongue.jpeg"
+    },
+    "28" : {
+        "Name": "Tribe",
+        "Description": "When you draw this card, you instantly die and are brought back to life as though Reincarnation had been cast on you.",
+        "Image": "images/refined_deck/tribe.jpeg"
+    },
+    "29" : {
+        "Name": "Vizier",
+        "Description": "At any time you choose within one year of drawing this card, you can ask a question in meditation and mentally receive a truthful answer to that question. Besides information, the answer helps you solve a puzzling problem or other dilemma. In other words, the knowledge comes with wisdom on how to apply it.",
+        "Image": "images/refined_deck/visier.jpeg"
+    }
+}
