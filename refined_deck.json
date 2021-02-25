@@ -11,13 +11,15 @@
     },
     "2" : {
         "Name": "Bull",
-        "Description": "You feel great strength coursing through you, but at the expense of your mind. Roll 1d4 and add that much to your strength score. Subtract the same amount from your Intelligence score.",
-        "Image": "images/refined_deck/bull.jpeg"
+        "Description": "You feel great strength coursing through you, but at the expense of your mind. Add 1d4 to your strength score. Subtract the same amount from your Intelligence score.",
+        "Image": "images/refined_deck/bull.jpeg",
+        "Roll": "1d4"
     },
     "3" : {
         "Name": "Cat",
-        "Description": "You feel yourself growing nimbler and more agile, but at the cost of your wisdom. Roll 1d4 and add that much to your Dexterity score. Subtract the same amount from your Wisdom score.",
-        "Image": "images/refined_deck/cat.jpeg"
+        "Description": "You feel yourself growing nimbler and more agile, but at the cost of your wisdom. Add 1d4 to your Dexterity score. Subtract the same amount from your Wisdom score.",
+        "Image": "images/refined_deck/cat.jpeg",
+        "Roll": "1d4"
     },
     "4" : {
         "Name": "Comet",
@@ -53,18 +55,21 @@
     },
     "10" : {
         "Name": "Jester",
-        "Description": "You are transported to a random plane of existence. Roll a d20: 1-5 = random location on the material plane; 6-7 = Feywild; 8-9 = Shadowfell; 10 = Air; 11 = Earth; 12 = Fire; 13 = Water; 14 = Mechanus; 15 = Elisium; 16 = Mount Celestia; 17 = Limbo; 18 = The Nine Hells; 19 = Arcadia, 20 = Sigil",
-        "Image": "images/refined_deck/jester.jpeg"
+        "Description": "You are transported to a random plane of existence. Destination is determined by a d20: 1-5 = random location on the material plane; 6-7 = Feywild; 8-9 = Shadowfell; 10 = Air; 11 = Earth; 12 = Fire; 13 = Water; 14 = Mechanus; 15 = Elisium; 16 = Mount Celestia; 17 = Limbo; 18 = The Nine Hells; 19 = Arcadia, 20 = Sigil. Roll result: 1d20",
+        "Image": "images/refined_deck/jester.jpeg",
+        "Roll": "1d20"
     },
     "11" : {
         "Name": "Golem",
-        "Description": "You gain a tough exterior and more hardy body, but at the cost of your charisma. Roll 1d4 and add that much to your Constitution score. Subtract the same amount from your Charisma score.",
-        "Image": "images/refined_deck/golem.jpeg"
+        "Description": "You gain a tough exterior and more hardy body, but at the cost of your charisma. Add 1d4 to your Constitution score. Subtract the same amount from your Charisma score.",
+        "Image": "images/refined_deck/golem.jpeg",
+        "Roll": "1d4"
     },
     "12" : {
         "Name": "Guillotine",
-        "Description": "This card signals peril. You magically lose one limb or appendage, the wound healing instantly except for the limb. Roll 1d10: 10 = One Ear; 9 = One Finger; 8-7 = Left Foot; 6-5 = Right Foot; 4-3 = Off Hand; 2 = Main Hand; 1 = Head (Death)",
-        "Image": "images/refined_deck/guillotine.jpeg"
+        "Description": "This card signals peril. You magically lose one limb or appendage, the wound healing instantly except for the limb. What is lost is determined by this table, after rolling a d10: 10 = One Ear; 9 = One Finger; 8-7 = Left Foot; 6-5 = Right Foot; 4-3 = Off Hand; 2 = Main Hand; 1 = Head (Death). Roll result: 1d10",
+        "Image": "images/refined_deck/guillotine.jpeg",
+        "Roll": "1d10"
     },
     "13" : {
         "Name": "Gem",
@@ -83,7 +88,7 @@
     },
     "16" : {
         "Name": "Mire",
-        "Description": "You feel your mind slow as your draw his card. You cannot keep your defences up as efficiently in combat, permanently suffering a -2 penalty to AC. Only a god or the Fates card and end this curse.",
+        "Description": "You feel your mind slow as you draw his card. You cannot keep your defences up as efficiently in combat, permanently suffering a -2 penalty to AC. Only a god or the Fates card and end this curse.",
         "Image": "images/refined_deck/mire.jpeg"
     },
     "17" : {
@@ -103,18 +108,21 @@
     },
     "20" : {
         "Name": "Sage",
-        "Description": "You feel a transformation in your mind, bringing with it the wisdom of an old wise one. However, you also feel ourself becoming less agile with your newfound wisdom. Roll 1d4. Add the number to your Wisdom score, and subtract the same amount from your Dexterity score.",
-        "Image": "images/refined_deck/sage.jpeg"
+        "Description": "You feel a transformation in your mind, bringing with it the wisdom of an old wise one. However, you also feel ourself becoming less agile with your newfound wisdom. Add 1d4 to your Wisdom score, and subtract the same amount from your Dexterity score.",
+        "Image": "images/refined_deck/sage.jpeg",
+        "Roll": "1d4"
     },
     "21" : {
-        "Name": "Scale",
+        "Name": "Scales",
         "Description": "You instantly age by 2d10 years, taking the same amount as phychic damage. You then have advantage on all skill checks that you and proficient in, and disadvantage in all others. A god, a wish spell or the Fates card can reverse this effect.",
-        "Image": "images/refined_deck/scales.jpeg"
+        "Image": "images/refined_deck/scales.jpeg",
+        "Roll": "2d10"
     },
     "22" : {
         "Name": "Scholar",
-        "Description": "Your mind undergoes spontaneous growth, and you feel yourself becoming more intelligent, but at the cost of your physical strength. Roll 1d4. Add the number to your Intelligence score, and subtract te same amount from your Strength score.",
-        "Image": "images/refined_deck/scholar.jpeg"
+        "Description": "Your mind undergoes spontaneous growth, and you feel yourself becoming more intelligent, but at the cost of your physical strength. Add 1d4 to your Intelligence score, and subtract te same amount from your Strength score.",
+        "Image": "images/refined_deck/scholar.jpeg",
+        "Roll": "1d4"
     },
     "23" : {
         "Name": "Skull",
@@ -138,17 +146,19 @@
     },
     "27" : {
         "Name": "Tongue",
-        "Description": "You feel a change in your mind, feeling yourself able to speak and act more persuasively. However, this comes at the expense of your physical endurance. Roll 1d4. Add the number to your Charisma score, and subtract the same amount from your Constitution score.",
-        "Image": "images/refined_deck/tongue.jpeg"
+        "Description": "You feel a change in your mind, feeling yourself able to speak and act more persuasively. However, this comes at the expense of your physical endurance. Add 1d4 to your Charisma score, and subtract the same amount from your Constitution score.",
+        "Image": "images/refined_deck/tongue.jpeg",
+        "Roll": "1d4"
     },
     "28" : {
         "Name": "Tribe",
-        "Description": "When you draw this card, you instantly die and are brought back to life as though Reincarnation had been cast on you.",
-        "Image": "images/refined_deck/tribe.jpeg"
+        "Description": "When you draw this card, you instantly die and are brought back to life as though Reincarnation had been cast on you. Roll result: 1d100",
+        "Image": "images/refined_deck/tribe.jpeg",
+        "Roll": "1d100"
     },
     "29" : {
         "Name": "Vizier",
         "Description": "At any time you choose within one year of drawing this card, you can ask a question in meditation and mentally receive a truthful answer to that question. Besides information, the answer helps you solve a puzzling problem or other dilemma. In other words, the knowledge comes with wisdom on how to apply it.",
-        "Image": "images/refined_deck/visier.jpeg"
+        "Image": "images/refined_deck/vizier.jpeg"
     }
 }

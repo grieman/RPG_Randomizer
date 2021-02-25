@@ -32,7 +32,7 @@ async def draw_from_deck(deck_json, message):
     num_draws = int(message_content[1])
     selections = random.sample(range(0,len(deck_json)), num_draws)
     for i in selections:
-        card = base_deck[str(i)]
+        card = deck_json[str(i)]
         desc = card['Description']
         if 'Roll' in card.keys():
             # Change description to have roll result
@@ -43,7 +43,7 @@ async def draw_from_deck(deck_json, message):
             except:
                 roll_add = 0
             die_nums = roll_string.split('d')
-            roll_result = str((random.sample(range(int(die_nums[0]), int(die_nums[1])+1), 1)[0] + roll_add))
+            roll_result = str(sum(random.choices(range(1, int(die_nums[1])+1), k = int(die_nums[0]))) + roll_add)
             desc = desc.replace(roll_string, roll_result)
 
         card_info = "```\n" + card['Name'] + "\n----------\n" + desc + "\n```"
@@ -61,9 +61,9 @@ async def draw_from_deck(deck_json, message):
             selections.extend(additional_selections)
             
         if 'Choose_Draw' in card.keys():
-            await message.channel.send("```\nYou have the option to draw " + str(card['Choose_Draw']) + " more cards. Refer to descriptions above for the option details. Say 'draw' to draw more cards, or 'continue' to keep the original effect.\n```")
+            await message.channel.send("```\nYou have the option to draw " + str(card['Choose_Draw']) + " more cards. Refer to descriptions above for the option details. Enter 'draw' to draw more cards, or 'continue' to keep the original effect.\n```")
             def check(m):
-                return (m.content == 'draw' or m.content == 'continue') and m.channel == message.channel
+                return (m.content.lower() == 'draw' or m.content.lower() == 'continue') and m.channel == message.channel
             try:
                 msg = await client.wait_for('message', timeout=300.0, check=check)
             except asyncio.TimeoutError:
