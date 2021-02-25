@@ -12,7 +12,8 @@
     "2" : {
         "Name": "Donjon",
         "Description": "You disappear and become entombed in a state of suspended animation in an extradimensional Sphere. Everything you were wearing and carrying stays behind in the space you occupied when you disappeared. You remain imprisoned until you are found and removed from the Sphere. You can't be located by any Divination magic, but a wish spell can reveal the location of your prison. You draw no more cards..",
-        "Image": "images/base_deck/donjon.png"
+        "Image": "images/base_deck/donjon.png",
+        "End_Draws":"Y"
     },
     "3" : {
         "Name": "Euryale",
@@ -42,13 +43,16 @@
     },
     "8" : {
         "Name": "Idiot",
-        "Description": "Permanently reduce your Intelligence by 1d4 + 1 (to a minimum score of 1). You can draw one additional card beyond your declared draws.",
-        "Image": "images/base_deck/idiot.png"
+        "Description": "Permanently reduce your Intelligence by 1d4+1 (to a minimum score of 1). You can draw one additional card beyond your declared draws.",
+        "Image": "images/base_deck/idiot.png",
+        "Choose_Draw": "1",
+        "Roll": "1d4+1"
     },
     "9" : {
         "Name": "Jester",
         "Description": "You gain 10,000 XP, or you can draw two additional cards beyond your declared draws.",
-        "Image": "images/base_deck/jester.png"
+        "Image": "images/base_deck/jester.png",
+        "Choose_Draw": "2"
     },
     "10" : {
         "Name": "Key",
@@ -63,7 +67,8 @@
     "12" : {
         "Name": "Moon",
         "Description": "You are granted the ability to cast the wish spell 1d3 times.",
-        "Image": "images/base_deck/moon.png"
+        "Image": "images/base_deck/moon.png",
+        "Roll": "1d3"
     },
     "13" : {
         "Name": "Rogue",
@@ -108,6 +113,7 @@
     "21" : {
         "Name": "The Void",
         "Description": "This black card Spells Disaster. Your soul is drawn from your body and contained in an object in a place of the DM's choice. One or more powerful beings guard the place. While your soul is trapped in this way, your body is Incapacitated. A wish spell can't restore your soul, but the spell reveals the location of the object that holds it. You draw no more cards.",
-        "Image": "images/base_deck/void.png"
+        "Image": "images/base_deck/void.png",
+        "End_Draws":"Y"
     }
 }

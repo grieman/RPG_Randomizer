@@ -3,6 +3,7 @@ import os
 from dotenv import load_dotenv
 import random
 import json
+import asyncio
 
 load_dotenv()
 
@@ -49,14 +50,49 @@ async def on_message(message):
         selections = random.sample(range(0,22), num_draws)
         for i in selections:
             card = base_deck[str(i)]
-            card_info = "```\n" + card['Name'] + "\n----------\n" + card['Description'] + "\n```"
+            desc = card['Description']
+            if 'Roll' in card.keys():
+                # Change description to have roll result
+                roll_string = card['Roll']
+                try:
+                    roll_add = int(roll_string.split('+')[1])
+                    roll_string = roll_string.split('+')[0]
+                except:
+                    roll_add = 0
+                die_nums = roll_string.split('d')
+                roll_result = str((random.sample(range(int(die_nums[0]), int(die_nums[1])+1), 1)[0] + roll_add))
+                desc = desc.replace(roll_string, roll_result)
+
+            card_info = "```\n" + card['Name'] + "\n----------\n" + desc + "\n```"
+
             await message.channel.send(card_info, file=discord.File(card['Image']))
+
+            if "End_Draws" in card.keys():
+                break
+            
             if 'Add_Draw' in card.keys():
-                #Draw that many new cards
+                #Add that many new cards to list
                 re_selections = random.sample(range(0,22), 22)
                 additions = [x for x in re_selections if x not in selections]
                 additional_selections = additions[0:int(card['Add_Draw'])]
                 selections.extend(additional_selections)
+        
+            if 'Choose_Draw' in card.keys():
+                await message.channel.send("```\nYou have the option to draw " + str(card['Choose_Draw']) + " more cards. Refer to descriptions above for the option details. Say 'draw' to draw more cards, or 'continue' to keep the original effect.\n```")
+                def check(m):
+                    return (m.content == 'draw' or m.content == 'continue') and m.channel == message.channel
+                try:
+                    msg = await client.wait_for('message', timeout=300.0, check=check)
+                except asyncio.TimeoutError:
+                    await message.channel.send('```Defaulting to continue```')
+                else:
+                    if msg.content == 'draw':
+                        re_selections = random.sample(range(0,22), 22)
+                        additions = [x for x in re_selections if x not in selections]
+                        additional_selections = additions[0:int(card['Choose_Draw'])]
+                        selections.extend(additional_selections)
+    
+
     
     if message.content.startswith('$draw_r'):
         message_content = message.content.split(' ')
