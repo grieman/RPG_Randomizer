@@ -88,7 +88,7 @@
     },
     "16" : {
         "Name": "Mire",
-        "Description": "You feel your mind slow as you draw his card. You cannot keep your defences up as efficiently in combat, permanently suffering a -2 penalty to AC. Only a god or the Fates card and end this curse.",
+        "Description": "You feel your mind slow as you draw his card. You cannot keep your defences up as efficiently in combat, permanently suffering a -2 penalty to AC. Only a god or the Fates card can end this curse.",
         "Image": "images/refined_deck/mire.jpeg"
     },
     "17" : {

@@ -12,11 +12,13 @@ token = os.getenv('TOKEN')
 info_string = '''
 Deck of Many Choices
 ---------
-A character can choose, once and only once, to draw a specified number of cards (max 10) from this deck of 52. They must specify an exact number of cards, and choose to draw from the top (unfettered magics) or the bottom (refined magics) of the deck. Once so declared,the specified number cards will appear from the deck, cause some specified effects, and then return to the deck, which is now inert to the previous user. It can be used by someone else after ten minutes has passed.
+A character can choose, once and only once, to draw a specified number of cards (max 10) from this deck of 52. They must specify an exact number of cards, and choose to draw from the top (unfettered magics) or the bottom (refined magics) of the deck. Once so declared, the specified number cards will appear from the deck, cause some specified effects, and then return to the deck, which is now inert to the previous user. It can be used by someone else after ten minutes has passed.
 
 Commands are:
 $draw_u n to draw n cards from the unfettered magics deck
 $draw_r n to draw n cards from the refined magics deck
+
+Only users with the role "Deck Holder" can use these commands
 '''
 
 refined_deck = json.load(open('refined_deck.json'))
@@ -87,13 +89,16 @@ async def on_message(message):
         return
     
     if message.content.startswith('$draw_info'):
-        await message.channel.send("```" + info_string + "```")
+        if "Deck Holder" in [x.name for x in message.author.roles]:
+            await message.channel.send("```" + info_string + "```")
 
     if message.content.startswith('$draw_u'):
-        await draw_from_deck(base_deck, message)
+        if "Deck Holder" in [x.name for x in message.author.roles]:
+            await draw_from_deck(base_deck, message)
     
     if message.content.startswith('$draw_r'):
-        await draw_from_deck(refined_deck, message)
+        if "Deck Holder" in [x.name for x in message.author.roles]:
+            await draw_from_deck(refined_deck, message)
 
 
 client.run(token)
